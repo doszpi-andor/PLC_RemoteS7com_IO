@@ -2,8 +2,8 @@ from threading import Timer
 
 from _snap7.snap7_server import S7Server
 from _view.remote_io_view import RemoteIOView
-from _data.szalag5_data import Szalag5Data, Szalag5Address
-from _data.szalag5_view import Conveyors, ErrorCheckBox
+from szalag_data.szalag5_data import Szalag5Data, Szalag5Address
+from szalag_data.szalag5_view import Conveyors, ErrorCheckBox
 
 class App(RemoteIOView):
 
