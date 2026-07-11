@@ -175,7 +175,6 @@ if __name__ == "__main__":
 
     try:
         while True:
-            s7_server.set_transmit_bit('0.0', True)
             sleep(1)
     except KeyboardInterrupt:
         s7_server.stop()
