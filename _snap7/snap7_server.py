@@ -165,7 +165,12 @@ class S7Server:
             buffer[index] = 0x00
     
 if __name__ == "__main__":
-    s7_server = S7Server(ip_address="192.168.90.191", port=1102)
+    class TestS7Server(S7Address):
+        RECEIVE_ADDRESS = {'address': 'QB0', 'size': 1}
+        TRANSMIT_ADDRESS = {'address': 'IB0', 'size': 1}
+
+
+    s7_server = S7Server(ip_address="192.168.90.190", port=102, s7_address=TestS7Server())
     s7_server.start()
 
     try:
