@@ -173,10 +173,9 @@ if __name__ == "__main__":
     s7_server = S7Server(ip_address="192.168.90.190", port=102, s7_address=TestS7Server())
     s7_server.start()
 
-    s7_server.set_transmit_bit('0.0', True)
-
     try:
         while True:
+            s7_server.set_transmit_bit('0.0', True)
             sleep(1)
     except KeyboardInterrupt:
         s7_server.stop()
