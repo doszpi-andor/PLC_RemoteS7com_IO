@@ -1,4 +1,4 @@
 @ECHO OFF
 cd c:\PLC_RemoteS7com_IO
 git pull
-c:\PLC_RemoteS7com_IO\.venv\Scripts\python.exe szalag4.py
+start c:\PLC_RemoteS7com_IO\.venv\Scripts\pythonw.exe szalag4.py
