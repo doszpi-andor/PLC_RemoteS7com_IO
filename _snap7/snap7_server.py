@@ -68,7 +68,7 @@ class S7Data:
 
 class S7Server:
 
-    TIMEOUT = 1
+    TIMEOUT = 10
 
     __transmit_data: bytearray
     __receive_data: bytearray
